@@ -7,11 +7,11 @@ When migrating to upstart, don't forget to disable the default `init.d` scripts!
 If you might change your mind about using upstart, run the command below to disable the old service but keep the script:
 
 ```
-sudo update-rc.d nginx disable
+sudo update-rc.d [script] disable
 ```
 
 Otherwise simply delete the `init.d` script
 
 ```
-sudo rm /etc/init.d/nginx
+sudo rm /etc/init.d/[script]
 ```
